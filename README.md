@@ -89,10 +89,18 @@ Here are the key scripts included in the `package.json`:
   Runs all tests with Jest in watch mode.
 
 - **Lint the code**:
+
   ```bash
   yarn run lint
   ```
+
   Checks code for style and syntax issues using Expo's lint configuration.
+
+- **Format the code**:
+  ```bash
+  yarn run format
+  ```
+  Formats the code using prettier
 
 # Commit Message Guidelines
 
