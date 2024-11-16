@@ -94,29 +94,55 @@ Here are the key scripts included in the `package.json`:
   ```
   Checks code for style and syntax issues using Expo's lint configuration.
 
-## Commit Message Convention
+# Commit Message Guidelines
 
-We follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) specification for all commit messages.
+This project follows the **Conventional Commits** standard to ensure consistent and readable commit history. Each commit message should follow the structure below:
 
-### Commit Format:
+### Commit Message Format
 
-- **type**: **subject**
-- **type** — must be one of: `feat`, `fix`, `chore`, `docs`, `style`, `refactor`, `perf`, `test`
-- **subject** — a short description of the change.
+- **type**: Describes the category of the change. Examples include `feat`, `fix`, `chore`, `docs`, `style`, `refactor`, `perf`, `test`, and `build`.
+- **scope** (optional): Clarifies what part of the codebase the change affects, such as `api`, `ui`, `auth`, etc.
+- **subject**: A short, imperative description of the change, explaining what the commit does (e.g., `add login form validation`).
 
-Example:
+### Commit Types
 
+| Type       | Description                                                   |
+| ---------- | ------------------------------------------------------------- |
+| `feat`     | Adds a new feature                                            |
+| `fix`      | Fixes a bug                                                   |
+| `chore`    | General maintenance tasks, not affecting source code or tests |
+| `docs`     | Documentation changes                                         |
+| `style`    | Code style updates (formatting, missing semi-colons, etc.)    |
+| `refactor` | Code refactoring without adding features or fixing bugs       |
+| `perf`     | Performance improvement                                       |
+| `test`     | Adding or updating tests                                      |
+| `build`    | Changes affecting the build system or dependencies            |
+
+### Examples
+
+- **Feature**: `feat(auth): add user registration flow`
+- **Bug Fix**: `fix(ui): resolve button alignment issue on mobile`
+- **Chore**: `chore(deps): update eslint to latest version`
+- **Documentation**: `docs(readme): update setup instructions`
+
+### Additional Rules
+
+- Keep the **subject line** to 50 characters or fewer.
+- Use the **imperative mood** in the subject line (e.g., "add" not "adding").
+- Capitalize the **type** and **scope** consistently (prefer lowercase).
+- Avoid ending the **subject line** with a period.
+
+By following these guidelines, the commit history will be clear, organized, and easy to understand.
+
+### Examples
+
+```bash
+# Example commands for committing
+git commit -m "feat(auth): add user registration flow"
+git commit -m "fix(ui): resolve button alignment issue on mobile"
+git commit -m "chore(deps): update eslint to latest version"
+git commit -m "docs(readme): update setup instructions"
 ```
-feat: add support for user authentication
-fix: resolve bug in user profile API
-chore: update dependencies
-```
-
-### Additional Commit Rules:
-
-- **No breaking changes**: Ensure that your commit does not introduce breaking changes unless explicitly noted.
-- **Imperative tense**: Use the imperative form for commit messages (e.g., “Fix bug” instead of “Fixed bug”).
-- **Short and concise**: Keep the subject line under 72 characters.
 
 ## Additional Notes
 
