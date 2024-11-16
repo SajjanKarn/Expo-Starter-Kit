@@ -15,7 +15,7 @@ This starter kit is preconfigured with:
 ### 1. Clone the Repository
 
 ```bash
-yarn create expo-app -e https://github.com/SajjanKarn/Expo-Starter-Kit.git expo-starter
+git clone https://github.com/SajjanKarn/Expo-Starter-Kit
 ```
 
 ### 2. Install Dependencies
@@ -23,7 +23,7 @@ yarn create expo-app -e https://github.com/SajjanKarn/Expo-Starter-Kit.git expo-
 Navigate into the project directory and install dependencies. **pnpm** is recommended to ensure Husky hooks function correctly:
 
 ```bash
-cd expo-starter
+cd Expo-Starter-Kit
 
 # install the dependencies
 yarn
