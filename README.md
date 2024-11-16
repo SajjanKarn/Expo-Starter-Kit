@@ -1,50 +1,127 @@
-# Welcome to your Expo app 👋
+# Expo Starter Kit
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This starter kit is preconfigured with:
 
-## Get started
+- 🚀 **Expo Router** — File-based routing for React Native.
+- 🛠 **TypeScript** — Type-safe development for React Native.
+- 🎨 **Tailwind CSS** — Utility-first styling with support for React Native using [NativeWind](https://nativewind.dev/).
+- 📏 **ESLint** — Enforces code quality and consistency.
+- ✨ **Prettier** — Formats your code for consistency.
+- 🚫 **lint-staged** — Runs checks on staged files before committing.
+- 📝 **Conventional Commit** — Standardized commit messages for better collaboration.
 
-1. Install dependencies
+## Getting Started
 
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+### 1. Clone the Repository
 
 ```bash
-npm run reset-project
+yarn create expo-app -e https://github.com/SajjanKarn/Expo-Starter-Kit.git expo-starter
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 2. Install Dependencies
 
-## Learn more
+Navigate into the project directory and install dependencies. **pnpm** is recommended to ensure Husky hooks function correctly:
 
-To learn more about developing your project with Expo, look at the following resources:
+```bash
+cd expo-starter
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+# install the dependencies
+yarn
 
-## Join the community
+#or
 
-Join our community of developers creating universal apps.
+npm i
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+#or
+pnpm install
+```
+
+### 3. Run the Development Server
+
+Start the development server with:
+
+```bash
+yarn start
+```
+
+## Available Scripts
+
+Here are the key scripts included in the `package.json`:
+
+- **Start the development server**:
+
+  ```bash
+  yarn start
+  ```
+
+  Launches the Expo development server.
+
+- **Run on Android**:
+
+  ```bash
+  yarn run android
+  ```
+
+  Starts the app on an Android emulator or device.
+
+- **Run on iOS**:
+
+  ```bash
+  yarn run ios
+  ```
+
+  Starts the app on an iOS simulator or device.
+
+- **Run on Web**:
+
+  ```bash
+  yarn run web
+  ```
+
+  Starts the app in a web browser.
+
+- **Run tests**:
+
+  ```bash
+  yarn run test
+  ```
+
+  Runs all tests with Jest in watch mode.
+
+- **Lint the code**:
+  ```bash
+  yarn run lint
+  ```
+  Checks code for style and syntax issues using Expo's lint configuration.
+
+## Commit Message Convention
+
+We follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) specification for all commit messages.
+
+### Commit Format:
+
+- **type**: **subject**
+- **type** — must be one of: `feat`, `fix`, `chore`, `docs`, `style`, `refactor`, `perf`, `test`
+- **subject** — a short description of the change.
+
+Example:
+
+```
+feat: add support for user authentication
+fix: resolve bug in user profile API
+chore: update dependencies
+```
+
+### Additional Commit Rules:
+
+- **No breaking changes**: Ensure that your commit does not introduce breaking changes unless explicitly noted.
+- **Imperative tense**: Use the imperative form for commit messages (e.g., “Fix bug” instead of “Fixed bug”).
+- **Short and concise**: Keep the subject line under 72 characters.
+
+## Additional Notes
+
+- Ensure you have Node.js and Expo CLI installed before running any scripts.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
